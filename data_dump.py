@@ -23,7 +23,7 @@ if __name__=="__main__":
 
     #Inserting the records to Mongo DB
 
-    client[DATABASE_NAME][COLLECTION_NAME].insertj_many(json_record)
+    client[DATABASE_NAME][COLLECTION_NAME].insert_many(json_record)
 
 
 
