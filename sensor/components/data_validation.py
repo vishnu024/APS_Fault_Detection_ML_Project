@@ -48,6 +48,8 @@ class DataValidation:
             self.validation_error[report_key_name]=list(drop_column_names)
             df.drop(list(drop_column_names),axis=1,inplace=True)
 
+            
+
             #return None no columns left
             if len(df.columns)==0:
                 return None
