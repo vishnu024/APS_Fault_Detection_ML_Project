@@ -33,8 +33,10 @@ class ModelPusher:
             save_object(file_path=self.model_pusher_config.pusher_model_path, obj=model)
             save_object(file_path=self.model_pusher_config.pusher_target_encoder_path, obj=target_encoder)
 
+            
 
             #saved model dir
+
             logging.info(f"Saving model in saved model dir")
             transformer_path=self.model_resolver.get_latest_save_transformer_path()
             model_path=self.model_resolver.get_latest_save_model_path()
