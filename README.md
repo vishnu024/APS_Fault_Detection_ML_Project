@@ -23,7 +23,7 @@ The problem is to reduce the cost due to unnecessary repairs. So it is required 
 2. AWS EC2
 3. AWS ECR
 4. Git Actions
-5. Terraform
+
 
 ## How to run?
 Before we run the project, make sure that you are having MongoDB in your local system, with Compass since we are using MongoDB for data storage. You also need AWS account to access the service like S3, ECR and EC2 instances.
@@ -42,7 +42,7 @@ Before we run the project, make sure that you are having MongoDB in your local s
 
 ### Step 1: Clone the repository
 ```bash
-git clone https://github.com/sethusaim/Sensor-Fault-Detection.git
+git clone https://github.com/vishnu024/APS_Fault_Detection_ML_Project.git
 ```
 
 ### Step 2- Create a conda environment after opening the repository
@@ -68,7 +68,7 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 
 export AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION>
 
-export MONGODB_URL="mongodb+srv://<username>:<password>@ineuron-ai-projects.7eh1w4s.mongodb.net/?retryWrites=true&w=majority"
+export MONGODB_URL="mongodb+srv://<username>:<password>@vishnu.ku9p1.mongodb.net/?retryWrites=true&w=majority"
 
 ```
 
@@ -107,20 +107,8 @@ docker run -d -p 8080:8080 <IMAGE_NAME>
 To run the project  first execute the below commmand.
 MONGO DB URL: 
 ```
-mongodb+srv://avnish:XglZZ9OkjjUw74pZ@ineuron-ai-projects.7eh1w4s.mongodb.net/admin?authSource=admin&replicaSet=atlas-okvkrd-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true
+Update your MongoDB URL
 ```
-windows user
-
-```
-MONGO_DB_URL=mongodb+srv://avnish:XglZZ9OkjjUw74pZ@ineuron-ai-projects.7eh1w4s.mongodb.net/admin?authSource=admin&replicaSet=atlas-okvkrd-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true
-```
-
-Linux user
-
-```
-export MONGO_DB_URL=mongodb+srv://avnish:XglZZ9OkjjUw74pZ@ineuron-ai-projects.7eh1w4s.mongodb.net/admin?authSource=admin&replicaSet=atlas-okvkrd-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true
-```
-
 then run 
 ```
 python main.py
